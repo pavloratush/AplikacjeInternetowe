@@ -1,0 +1,153 @@
+.profile {
+    height: 100%;
+    display: flex;
+}
+
+.user-info {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.info{
+    border-bottom: 1px solid white;
+}
+
+.user {
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-media {
+    width: 60%;
+    display: flex;
+    font-size: 2em;
+    padding: 0 1em 0 1em;
+    justify-content: space-between;
+
+}
+
+.fa-facebook-f {
+    color: #3B5998;
+    margin-bottom: 1em;
+}
+
+.fa-instagram {
+    color: #FFDC80;
+    margin-bottom: 1em;
+}
+
+.fa-google-plus-g {
+    color: #DD4B39;
+    margin-bottom: 1em;
+}
+
+.fa-snapchat-ghost {
+    color: #FFFC00;
+    margin-bottom: 1em;
+}
+
+
+.preferences {
+    display: flex;
+    height: 100%;
+    width: 50vw;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.user > img {
+    max-width: 10em;
+    max-height: 10em;
+    margin-top: 3em;
+    border-radius: 8em;
+}
+
+.generes {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0 3em 0;
+    height: 33%;
+}
+
+.gen > img {
+    width: 95%;
+}
+
+.favToWatch {
+    width: 80%;
+    height: 6em;
+}
+
+.favToWatch > img {
+    width: 100%;
+    height: 6em;
+}
+
+@media only screen and (max-device-width: 430px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 85%;
+    }
+
+    .user {
+        margin: 0;
+        height: 50%;
+        width: 100%;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .preferences {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .segment {
+        height: 10%;
+    }
+
+    .segment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        max-height: 10%;
+    }
+
+    .favToWatch > img {
+        width: 100%;
+        max-height: 4em;
+    }
+
+    .gen > img {
+        max-height: 4em;
+
+    }
+}

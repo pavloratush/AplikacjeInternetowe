@@ -1,0 +1,110 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1em;
+    height: 80%;
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.text-of-movies {
+    height: auto;
+}
+
+.movies > div > div > img {
+    max-height: 60%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+    background-color: #121212;
+}
+
+.movies > div > div > div {
+    height: 40%;
+    margin: 1em;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.movies::-webkit-scrollbar {
+    width: 1em;
+}
+
+.movies::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.movies::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.movies > div > div {
+    border: 1px solid gray;
+    border-radius: 1em 1em 1em 1em;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #301F3E;
+}
+
+section.movie-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.movie-1 {
+    height: auto;
+}
+
+.social-section{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 40%;
+    justify-content: space-around;
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+.fa-heart{
+    color: #ffcccb;
+}
+.fa-minus-square{
+ color: #ade6e6;
+}
+
+@media only screen and (max-device-width: 430px) {
+    header {
+        margin-top: 2em;
+    }
+
+    section {
+        height: 95%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    p {
+        padding-bottom: 1em;
+    }
+
+    .movies > div > div >div {
+        flex-direction: row;
+    }
+    .social-section{
+        width: 20%;
+    }
+
+}

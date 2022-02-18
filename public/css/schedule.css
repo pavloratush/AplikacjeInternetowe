@@ -1,0 +1,73 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1em;
+    height: 80%;
+    grid-gap: 2em;
+    padding: 2em;
+    overflow: auto;
+}
+
+.text-of-meetings {
+    height: auto;
+}
+
+.meetings > div > img {
+    max-height: 50%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+    background-color: #121212;
+}
+
+.meetings > div > div {
+    height: 50%;
+    margin: 1em;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.meetings > div {
+    border: 1px solid gray;
+    border-radius: 1em 1em 1em 1em;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #301F3E;
+}
+
+section.meeting-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meeting-form > form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.meeting-1 {
+    height: auto;
+}
+
+@media only screen and (max-device-width: 430px) {
+
+    section {
+        height: 95%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    p {
+        padding-bottom: 1em;
+    }
+
+    .meetings > div > div {
+            flex-direction: row;
+    }
+
+}

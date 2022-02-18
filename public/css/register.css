@@ -1,0 +1,23 @@
+input, textarea {
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
+
+.no-valid {
+    border: 1px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.4em lightcoral;
+    outline: none;
+}
+
+::placeholder {
+    color: wheat;
+    opacity: 1;
+}
+
+@media only screen and (max-device-width: 430px) {
+    input,textarea {
+        height: 0.5em;
+    }
+}
